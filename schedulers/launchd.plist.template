@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict/>
+	<key>KeepAlive</key>
+	<false/>
+	<key>Label</key>
+	<string>{{LABEL}}</string>
+	<key>ProcessType</key>
+	<string>Background</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>-lc</string>
+		<string>set -a; [[ -f "{{VAULT_PATH}}/brain.env" ]] &amp;&amp; . "{{VAULT_PATH}}/brain.env"; set +a; exec "{{VAULT_PATH}}/.claude/scripts/auto-ingest.sh"</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>StandardErrorPath</key>
+	<string>{{VAULT_PATH}}/wiki/logs/auto-ingest-launchd-err.log</string>
+	<key>StandardOutPath</key>
+	<string>{{VAULT_PATH}}/wiki/logs/auto-ingest-launchd.log</string>
+	<key>StartInterval</key>
+	<integer>600</integer>
+	<key>WorkingDirectory</key>
+	<string>{{VAULT_PATH}}</string>
+</dict>
+</plist>
