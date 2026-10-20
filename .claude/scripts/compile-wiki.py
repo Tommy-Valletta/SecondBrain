@@ -678,8 +678,8 @@ def main():
                         help="Preview without writing files")
     parser.add_argument("--limit", type=int, default=0, metavar="N",
                         help="promote: process at most N sources this run (0 = no limit). "
-                             "A full run is ~140 `claude -p` invocations; read the output "
-                             "of a small run before authorising that.")
+                             "Promotion may call a model for each eligible source; "
+                             "review a small run before processing the full library.")
     parser.add_argument("--retry-failed", action="store_true",
                         help="promote: also retry sources quarantined after "
                              f"{MAX_COMPILE_ATTEMPTS} failed attempts")

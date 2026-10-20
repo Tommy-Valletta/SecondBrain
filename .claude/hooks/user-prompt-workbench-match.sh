@@ -33,7 +33,7 @@ def specific(tag):
         return False
     if "-" in tag or "_" in tag:
         return True
-    if re.match(r"^[a-z]+-?\d", tag):   # ticket-ish, e.g. ai-191
+    if re.match(r"^[a-z]+-?\d", tag):   # identifier-style, e.g. demo-101
         return True
     return len(tag) >= 5
 
