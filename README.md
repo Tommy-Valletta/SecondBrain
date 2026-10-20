@@ -6,6 +6,35 @@ Clone the template, connect your AI agent, and start adding notes. SecondBrain o
 
 Think of it as a project notebook with a flight recorder attached. The notebook helps you find useful context. The recorder lets you return to the original material when a summary is incomplete or a decision needs checking.
 
+## Why choose this over a traditional second brain?
+
+Traditional second-brain methods help you [capture, organize, distill, and use information](https://fortelabs.com/blog/basboverview/). SecondBrain builds on that foundation with an engine for capturing agent sessions, maintaining the library, and bringing relevant context into future conversations.
+
+The difference is in how much of that routine you can make repeatable:
+
+| Task | In a manual, notes-first setup | With this template and engine |
+| --- | --- | --- |
+| Capture | Write notes and save useful material | Add your notes and capture supported agent sessions through hooks |
+| Summarize | Revisit sources and write summaries | Generate source-linked summaries with your configured AI agent |
+| Recover context | Find relevant notes and explain them again | Use project-tag pointers and retrieval tools to locate relevant pages |
+| Maintain the library | Update navigation and check old notes yourself | Generate indexes and run checks for broken links, unfinished drafts, and stale information |
+| Check an answer | Follow whatever references the note contains | Trace knowledge pages through summaries to preserved sources and recorded checks |
+
+**Why that helps:** you get a repeatable path from a conversation to a source, a summary, and reusable knowledge. The engine handles mechanical indexing and supports context retrieval, leaving you to decide what matters and whether a conclusion is sound. This is especially useful when you want an AI agent to continue a project without rebuilding its context from scratch each time.
+
+Your library stays in readable Markdown files. You can inspect a summary, correct it against its source, and use your preferred editor. The automation is configurable, so you can adopt the pieces that help your own routine.
+
+### How easy is migration?
+
+**Start with a few useful notes; you do not need to rebuild your entire library.** Markdown and plain-text collections provide the simplest starting point. Obsidian notes already use [Markdown files](https://obsidian.md/help/import/markdown), and Notion pages can be [exported as Markdown](https://www.notion.com/help/export-your-content).
+
+1. **Create a private copy and configure the engine.** Follow the [setup guide](BOOTSTRAP.md) for your agent and environment.
+2. **Copy a small selection of notes into `raw/imports/`.** Keep your existing library as a backup. Export or convert other formats to Markdown or plain text first.
+3. **Process a few sources and review the results.** Use source ingestion to create summaries, check their source links, and add a project page with specific tags.
+4. **Expand gradually.** Confirm that retrieval answers a real question, then bring across more notes and enable the capture or scheduling features you want.
+
+The files are straightforward to bring across; agent integration is a separate setup step. Rich formatting, attachments, database relationships, and existing links may need adjustment. There is no universal one-click importer, so test a representative sample before migrating a large collection.
+
 ## The problem it tackles
 
 An AI assistant can help you build something today and lose important context tomorrow. You end up repeating the same constraints, explaining an old decision, or asking it to stop repeating a test you already ran.
