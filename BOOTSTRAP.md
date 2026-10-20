@@ -2,6 +2,8 @@
 
 [Overview](README.md) · [Technical README](README.technical.md)
 
+Bringing existing notes? Use the [Obsidian and Notion migration guide](docs/MIGRATION.md) alongside these setup steps.
+
 Use this template and engine to create a personal knowledge library, connect an AI agent, and automate capture and retrieval. The included integration scripts target Claude Code/Pi and macOS-oriented utilities. Adapt and test Linux, Windows/Codex, or other integrations for your environment.
 
 ## 1. Explore without installing
